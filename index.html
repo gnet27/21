@@ -144,7 +144,13 @@ body {
 
   
 
-    <script >
+    <script>
+function log() {
+sessionStorage.setItem("sudopass", "21forreal");
+  location.assign("https://gnet27.ml/21/gang");
+;
+}
+
       $(document).ready(function() {
     //$('#username').focus();
 
@@ -157,6 +163,7 @@ body {
 
         if (ValidUsername === true && ValidPassword === true) {
             $('.valid').css('display', 'block');
+log();
             location.replace("https://www.gnet27.ml/21/gang");
         } else {
             var ValidUsername = $('#username').val() === 'george';
@@ -175,13 +182,13 @@ body {
 function cancel() {
     window.location.replace("https://www.gnet27.ml")
 }
-    </script>
 
-
+function log() {
 sessionStorage.setItem("sudopass", "21forreal");
-  location.replace("https://gnet27.ml/21/gang");
+  location.assign("https://gnet27.ml/21/gang");
 ;
-  
+}
+  </script>
   
 
   <script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
