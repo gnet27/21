@@ -157,7 +157,7 @@ body {
 
         if (ValidUsername === true && ValidPassword === true) {
             $('.valid').css('display', 'block');
-            location.replace("https://www.gnet27.ml");
+            location.replace("https://www.gnet27.ml/21/gang");
         } else {
             var ValidUsername = $('#username').val() === 'george';
             var ValidPassword = $('#password').val() === 'kiwi27@';
@@ -178,17 +178,7 @@ function cancel() {
     </script>
 
 
-toggleWelcome = function(on) {
-	var $welcome = $('.welcome');
-  (on) ? $welcome.show() : $welcome.hide();
-}
-$('[terminal-reset]').on('click', function(){
-  toggleWelcome(false);
-  location.replace("https://gnet27.ml/");
-});
-$('[terminal-cntne]').on('click', function(){
-  toggleWelcome(false);
-  sessionStorage.setItem("sudopass", "21forreal");
+sessionStorage.setItem("sudopass", "21forreal");
   location.replace("https://gnet27.ml/21/gang");
 });
   
