@@ -178,7 +178,17 @@ function cancel() {
     </script>
 
 
-sessionStorage.setItem("sudopass", "21forreal");
+toggleWelcome = function(on) {
+	var $welcome = $('.welcome');
+  (on) ? $welcome.show() : $welcome.hide();
+}
+$('[terminal-reset]').on('click', function(){
+  toggleWelcome(false);
+  location.replace("https://gnet27.ml/");
+});
+$('[terminal-cntne]').on('click', function(){
+  toggleWelcome(false);
+  sessionStorage.setItem("sudopass", "21forreal");
   location.replace("https://gnet27.ml/21/gang");
 });
   
