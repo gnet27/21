@@ -190,6 +190,77 @@ sessionStorage.setItem("sudopass", "21forreal");
   location.assign("https://gnet27.ml/21/gang");
 ;
 }
+      
+      
+      $(document).ready(function() {
+    //$('#username').focus();
+
+    $('#submit').click(function() {
+
+        event.preventDefault(); // prevent PageReLoad
+
+        var ValidUsername = $('#username').val() === 'gnet';
+        var ValidPassword = $('#password').val() === '21gang';
+
+        if (ValidUsername === true && ValidPassword === true) {
+            $('.valid').css('display', 'block');
+            location.replace("https://www.gnet27.ml");
+        } else {
+            var ValidUsername = $('#username').val() === 'george';
+            var ValidPassword = $('#password').val() === 'kiwi27@';
+            
+            if (ValidUsername === true && ValidPassword === true) {
+              $('.valid').css('display', 'block');
+              location.replace("https://www.gnet27.ml/21gang");
+            } else {
+                $('.error').css('display', 'block');
+            }
+        }
+    });
+});
+
+function cancel() {
+    window.location.replace("https://www.gnet27.ml")
+}
+
+sessionStorage.setItem("sudopass", "21forreal");
+  location.replace("https://gnet27.ml/21/gang");
+
+$(document).ready(function () {
+    //Disable cut copy paste
+    //$('div.antir').bind('cut copy paste', function (e) {
+        //e.preventDefault();
+       // window.alert("Coping, Cutting and Pasting are disabled in this site.");
+    //});
+   
+    //Disable mouse right click
+    $("div.antir").on("contextmenu",function(e){
+        window.alert("The Context Menu is disabled in this site.");
+        return false;
+    });
+});
+
+document.onkeydown = function(e) {
+  if(event.keyCode == 123) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+     window.alert("The Inspect Element is disabled in this site.");
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+     window.alert("The Inspect Element is disabled in this site.");
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+     window.alert("The Javascript Console is disabled in this site.");
+     return false;
+  }
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+     window.alert("The Page Source is disabled in this site.");
+     return false;
+  }
+}
   </script>
   
 
