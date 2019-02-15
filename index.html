@@ -166,7 +166,8 @@ $(document).ready(function() {
             
             if (ValidUsername === true && ValidPassword === true) {
               $('.valid').css('display', 'block');
-              location.replace("https://www.gnet27.ml/21gang");
+              sessionStorage.setItem("sudopass", "21forreal");
+  location.replace("https://gnet27.ml/21/gang");
             } else {
                 $('.error').css('display', 'block');
             }
@@ -178,8 +179,7 @@ function cancel() {
     window.location.replace("https://www.gnet27.ml")
 }
 
-sessionStorage.setItem("sudopass", "21forreal");
-  location.replace("https://gnet27.ml/21/gang");
+
   </script>
 
 
